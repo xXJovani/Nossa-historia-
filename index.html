@@ -100,6 +100,7 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.3);
             border: 4px solid rgba(255,255,255,0.3);
             transition: all 0.3s ease;
+            background: rgba(0,0,0,0.2);
         }
 
         img, video {
@@ -109,8 +110,7 @@
             transition: transform 0.5s ease;
         }
 
-        .media-container:hover img,
-        .media-container:hover video {
+        .media-container:hover img {
             transform: scale(1.05);
         }
 
@@ -160,7 +160,6 @@
             60% {transform: translateY(-5px);}
         }
 
-        /* Controle de Música - Flutuante */
         #music-control {
             position: fixed;
             top: 20px;
@@ -207,18 +206,15 @@
 </head>
 <body>
 
-    <!-- Controle de Música (Música: Confess to You - Lim Kim) -->
+    <!-- Controle de Música -->
     <div id="music-control" onclick="toggleMusic()" title="Clique para tocar Confess to You ❤️">
         <i id="music-icon" class="fas fa-music"></i>
     </div>
     
-    <!-- Link de áudio externo da música Confess to You -->
     <audio id="bg-music" loop>
         <source src="https://cs1.mp3.pm/download/232717759/SS94SWZsUitlQk1UVlNzNTloN05TVTQrbVM0U3BwWTFWZ2xSVXlDTmdvYUU3RGplVXBHZEx2ay90bWcxSGV4bWNGSzVKNnJYZUoxRDdtU3hISHJGRDlqcFMxTkl1c1lEVDNXQjI1UjZ3dDhySHNXS3VOQ2oydlJ3dEVZcjMrWDQ/OST_King_the_Land_-_Lim_Kim_-_Confess_To_You_(mp3.pm).mp3" type="audio/mpeg">
-        Seu navegador não suporta áudio.
     </audio>
 
-    <!-- Hero Section -->
     <section>
         <div data-aos="zoom-in">
             <h1>❤️ Nossa História ❤️</h1>
@@ -228,62 +224,56 @@
         <a href="#inicio" class="btn-scroll"><i class="fas fa-chevron-down"></i></a>
     </section>
 
-    <!-- 25/06/2018 -->
     <section id="inicio">
         <h2 data-aos="fade-up">25 de Junho de 2018</h2>
         <div class="glass-card" data-aos="fade-up">
             <p>O dia em que o universo conspirou a nosso favor. ❤️</p>
             <div class="media-container">
-                <img src="c:\Users\Lucas\Desktop\foto\foto1.jpg.jpegc:\Users\Lucas\Desktop\foto\foto1.jpg.jpeg" alt="Foto 1" onerror="this.src='https://via.placeholder.com/400x500?text=Sua+Foto+1'">
+                <img src="foto1.jpg.jpeg" alt="Foto 1">
             </div>
         </div>
     </section>
 
-    <!-- Primeiro Capítulo -->
     <section>
         <h2 data-aos="fade-right">Nosso Primeiro Capítulo</h2>
         <div class="glass-card" data-aos="fade-left">
             <div class="media-container">
-                <img src="c:\Users\Lucas\Desktop\foto\foto2.jpg.jpeg" alt="Foto 2" onerror="this.src='https://via.placeholder.com/400x500?text=Sua+Foto+2'">
+                <img src="foto2.jpg.jpeg" alt="Foto 2">
             </div>
             <p>Cada sorriso compartilhado foi um tijolo no nosso castelo.</p>
         </div>
     </section>
 
-    <!-- Momentos Inesquecíveis -->
     <section>
         <h2 data-aos="fade-up">Momentos Inesquecíveis</h2>
         <div class="glass-card" data-aos="zoom-in">
             <div class="media-container">
-                <img src="c:\Users\Lucas\Desktop\foto\foto3.jpg.jpeg" alt="Foto 3" onerror="this.src='https://via.placeholder.com/400x500?text=Sua+Foto+3'">
+                <img src="foto3.jpg.jpeg" alt="Foto 3">
             </div>
             <p>Viajar, rir e crescer... sempre de mãos dadas.</p>
         </div>
     </section>
 
-    <!-- Cada dia mais fortes -->
     <section>
         <h2 data-aos="flip-left">Cada dia mais fortes</h2>
         <div class="glass-card" data-aos="flip-right">
             <div class="media-container">
-                <img src="c:\Users\Lucas\Desktop\foto\foto4.jpg.jpeg" alt="Foto 4" onerror="this.src='https://via.placeholder.com/400x500?text=Sua+Foto+4'">
+                <img src="foto4.jpg.jpeg" alt="Foto 4">
             </div>
             <p>Superamos desafios e celebramos vitórias.</p>
         </div>
     </section>
 
-    <!-- Nosso Amor -->
     <section>
         <h2 data-aos="zoom-in">Nosso Amor ❤️</h2>
         <div class="glass-card" data-aos="zoom-in">
             <div class="media-container">
-                <img src="c:\Users\Lucas\Desktop\foto\foto5.jpg.jpeg" alt="Foto 5" onerror="this.src='https://via.placeholder.com/400x500?text=Sua+Foto+5'">
+                <img src="foto5.jpg.jpeg" alt="Foto 5">
             </div>
             <p>Você é meu melhor capítulo. 🌹</p>
         </div>
     </section>
 
-    <!-- Contador -->
     <section>
         <h2 data-aos="fade-up">⏳ Nosso Tempo Juntos</h2>
         <div class="glass-card" data-aos="zoom-in">
@@ -309,29 +299,27 @@
         </div>
     </section>
 
-    <!-- Vídeo -->
     <section>
         <h2 data-aos="fade-up">🎥 Nosso Vídeo</h2>
         <div class="glass-card" data-aos="fade-up">
             <div class="media-container">
-                <video controls>
-                    <source src="c:\Users\Lucas\Desktop\foto\WhatsApp Video 2026-06-11 at 14.47.35.mp4" type="video/mp4">
+                <video id="main-video" controls>
+                    <source src="video.mp4.mp4" type="video/mp4">
                 </video>
             </div>
-            <p>Um pequeno registro de um grande amor.</p>
+            <p>Um pequeno registro do meu grande amor.</p>
         </div>
     </section>
 
-    <!-- Mensagem Final -->
     <section>
         <div class="glass-card" style="background: rgba(255,255,255,0.25);">
             <h2 style="color: #fff;">💌 Para você, Edilaine</h2>
             <p style="text-align: left;">
-                Minha amor,<br><br>
-                Desde 25/06/2018 minha vida ganhou um novo sentido. Você é minha paz e meu porto seguro.<br><br>
+                Meu grande amor,<br><br>
+                Desde 2018 minha vida ganhou um novo sentido. Você é minha paz e meu porto seguro.<br><br>
                 Obrigado por ser essa mulher incrível. Que nosso "para sempre" comece a cada novo amanhecer.<br><br>
                 Com todo o meu amor,<br>
-                <strong>Seu mozão ❤️</strong>
+                <strong>Seu mozão Lucas Jovani ❤️</strong>
             </p>
         </div>
     </section>
@@ -339,6 +327,50 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: false });
+
+        const music = document.getElementById("bg-music");
+        const icon = document.getElementById("music-icon");
+        const video = document.getElementById("main-video");
+        let isPlaying = false;
+        let userInteracted = false;
+
+        function enableAutoPlay() {
+            if (!userInteracted) {
+                userInteracted = true;
+                music.play().then(() => {
+                    isPlaying = true;
+                    icon.classList.replace("fa-music", "fa-pause");
+                }).catch(() => {});
+            }
+        }
+
+        document.addEventListener('click', enableAutoPlay, { once: true });
+        document.addEventListener('scroll', enableAutoPlay, { once: true });
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+                icon.classList.replace("fa-pause", "fa-music");
+            } else {
+                music.play();
+                icon.classList.replace("fa-music", "fa-pause");
+            }
+            isPlaying = !isPlaying;
+        }
+
+        video.addEventListener('play', () => {
+            music.pause();
+            isPlaying = false;
+            icon.classList.replace("fa-pause", "fa-music");
+        });
+
+        video.addEventListener('pause', () => {
+            if (userInteracted) {
+                music.play();
+                isPlaying = true;
+                icon.classList.replace("fa-music", "fa-pause");
+            }
+        });
 
         const startDate = new Date("2018-06-25T00:00:00");
         function updateCounter() {
@@ -355,21 +387,6 @@
         }
         setInterval(updateCounter, 1000);
         updateCounter();
-
-        const music = document.getElementById("bg-music");
-        const icon = document.getElementById("music-icon");
-        let isPlaying = false;
-
-        function toggleMusic() {
-            if (isPlaying) {
-                music.pause();
-                icon.classList.replace("fa-pause", "fa-music");
-            } else {
-                music.play().catch(e => alert("Clique na tela para permitir o áudio!"));
-                icon.classList.replace("fa-music", "fa-pause");
-            }
-            isPlaying = !isPlaying;
-        }
 
         function createHeart() {
             const heart = document.createElement("div");
